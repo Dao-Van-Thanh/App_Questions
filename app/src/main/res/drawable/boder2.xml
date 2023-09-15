@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#FFFFFF" /> <!-- Màu nền trong suốt -->
+    <stroke
+        android:width="2dp"
+        android:color="#FF0000"
+    />
+    <corners android:radius="1500dp" /> <!-- Độ cong của góc -->
+</shape>

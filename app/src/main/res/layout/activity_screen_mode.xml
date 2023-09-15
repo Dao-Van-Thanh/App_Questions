@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Acivity.ScreenMode"
+    android:id="@+id/activity_sreen_mode_relativeLayout"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/activity_sreen_mode_btn_random"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="171dp"
+        android:text="Select Mode"
+        android:padding="30dp"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:background="@drawable/boder"/>
+
+    <Button
+        android:id="@+id/activity_sreen_mode_btn_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/random_botton" />
+
+    <Button
+        android:id="@+id/activity_sreen_mode_btn_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_sreen_mode_btn_random"
+        android:layout_centerHorizontal="true"
+        android:text="@string/select_category_botton" />
+
+    <ProgressBar
+        android:id="@+id/activity_sreen_mode_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/activity_sreen_mode_btn_category"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="190dp"
+        android:visibility="gone"
+        android:progressDrawable="@drawable/custom_progress_bar"
+    />
+    <View
+        android:id="@+id/blockingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:elevation="10dp"
+        android:visibility="gone"
+        />
+</RelativeLayout>

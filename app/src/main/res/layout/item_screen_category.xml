@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/item_screen_category_btn"
+        android:text="abcxyz"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_margin="20dp"/>
+</LinearLayout>
