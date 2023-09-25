@@ -57,10 +57,10 @@ class ScreenGame : AppCompatActivity() {
         quizQuestion = gson.fromJson(quizQuestionJson, Model.QuizQuestion::class.java)
         when (quizQuestion.response_code) {
             0 -> {
-                StartCountDownTimer()
-                GetTheCorrectAnswer(INDEX_QUESTION)
-                LoadQuestion(INDEX_QUESTION)
-                EventChooseAnswer()
+                StartCountDownTimer()// bắt đầu đếm ngược
+                GetTheCorrectAnswer(INDEX_QUESTION) // lấy đáp án đúng
+                LoadQuestion(INDEX_QUESTION) // load câu hỏi
+                EventChooseAnswer()// sự kiện người dùng chọn đáp án
             }
             1 -> txtQuestion.setText("No Results")
             2 -> txtQuestion.setText("Invalid Parameter")
